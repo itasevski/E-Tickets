@@ -1,0 +1,12 @@
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\bin\Debug\netcoreapp3.1\ETickets.Repository.deps.json
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\bin\Debug\netcoreapp3.1\ETickets.Repository.dll
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\bin\Debug\netcoreapp3.1\ETickets.Repository.pdb
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\bin\Debug\netcoreapp3.1\ETickets.Domain.dll
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\bin\Debug\netcoreapp3.1\ETickets.Domain.pdb
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\obj\Debug\netcoreapp3.1\ETickets.Repository.csproj.AssemblyReference.cache
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\obj\Debug\netcoreapp3.1\ETickets.Repository.AssemblyInfoInputs.cache
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\obj\Debug\netcoreapp3.1\ETickets.Repository.AssemblyInfo.cs
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\obj\Debug\netcoreapp3.1\ETickets.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\obj\Debug\netcoreapp3.1\ETickets.Repository.csproj.CopyComplete
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\obj\Debug\netcoreapp3.1\ETickets.Repository.dll
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Repository\obj\Debug\netcoreapp3.1\ETickets.Repository.pdb

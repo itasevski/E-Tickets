@@ -1,5 +1,10 @@
-using ETickets.Web.Data;
-using ETickets.Web.Models.Identity;
+
+using ETickets.Domain.Identity;
+using ETickets.Repository;
+using ETickets.Repository.Implementation;
+using ETickets.Repository.Interface;
+using ETickets.Service.Implementation;
+using ETickets.Service.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,6 +38,14 @@ namespace ETickets.Web
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<ETicketsApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
+
+            services.AddTransient<ITicketService, TicketService>();
+            services.AddTransient<IOrderService, OrderService>();
+            services.AddTransient<IShoppingCartService, ShoppingCartService>();
+
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

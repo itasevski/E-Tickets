@@ -1,0 +1,73 @@
+﻿@model List<ETickets.Domain.DomainModels.Ticket>
+@using Microsoft.AspNetCore.Identity
+@using ETickets.Domain.Enum
+@inject SignInManager<ETickets.Domain.Identity.ETicketsApplicationUser> SignInManager
+@inject UserManager<ETickets.Domain.Identity.ETicketsApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    @if (SignInManager.IsSignedIn(User) && @UserManager.GetUserAsync(User).Result.Role == Role.ADMIN)
+    {
+        <div class="m-3">
+            <a class="btn btn-success" asp-controller="Tickets" asp-action="Create">Add new ticket</a>
+        </div>
+    }
+    @if (Model.Count > 1)
+    {
+        <div class="m-3">
+            <a class="btn btn-info" asp-controller="Tickets" asp-action="Index" asp-route-filter="true">Filter by date</a>
+        </div>
+    }
+
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        var item = Model[i];
+
+        if (i % 3 == 0)
+        {
+            @:<div class="row">
+            }
+
+
+            <div class="col-md-3 m-4">
+                <div class="card" style="width: 18rem; height: 40rem;">
+                    <img class="card-img-top" src="@item.MovieImage" style="height: 55%" alt="Image for product!" />
+
+                    <div class="card-body">
+                        <h3 class="card-title">@item.MovieName</h3>
+                        <p class="card-text">@item.MovieDescription</p>
+                        <p class="card-text">Category: @item.MovieGenre</p>
+                        <br />
+                        <h6 class="card-text">Start date: @item.StartDate</h6>
+                        <h6 class="card-text">Price: $@item.TicketPrice</h6>
+                    </div>
+
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <div class="card-footer">
+                            <a asp-controller="Tickets" asp-action="AddTicketToCart" asp-route-id="@item.Id" class="btn btn-info">Add to Cart</a>
+                            @if (@UserManager.GetUserAsync(User).Result.Role == Role.ADMIN)
+                            {
+                                <a asp - controller="Tickets" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>
+                                <form method="POST">
+                                    <button type="submit" asp-controller="Tickets" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-primary">Delete</button>
+                                </form>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+
+
+
+            if (i % 3 == 2)
+            {
+            @:</div>
+        }
+    }
+
+</div>

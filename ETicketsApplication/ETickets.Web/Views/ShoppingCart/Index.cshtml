@@ -1,0 +1,63 @@
+﻿@model ETickets.Domain.DTO.ShoppingCartDto
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container">
+
+    <div class="row m-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Movie Name</th>
+                    <th scope="col">Ticket quantity</th>
+                    <th scope="col">Ticket price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Tickets.Count == 0)
+                {
+                    <tr>
+                        <td colspan="5">No tickets in shopping cart.</td>
+                    </tr>
+                }
+                else
+                {
+                    @for (int i = 0; i < Model.Tickets.Count; i++)
+                    {
+                        var item = Model.Tickets[i];
+
+                        <tr>
+                            <th scope="row">@(i + 1)</th>
+                            <td>@item.Ticket.MovieName</td>
+                            <td>@item.Quantity</td>
+                            <td>$@item.Ticket.TicketPrice</td>
+                            <td><a asp-controller="ShoppingCart" asp-action="DeleteFromShoppingCart" asp-route-id="@item.TicketId" class="btn btn-danger">Delete</a></td>
+                        </tr>
+                    }
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="col">Total price:</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">$@Model.TotalPrice</th>
+                </tr>
+                @if (Model.Tickets.Count != 0)
+                {
+                    <tr>
+                        <th colspan="4"></th>
+                        <td><a asp-controller="ShoppingCart" asp-action="Order" class="btn btn-primary">Order</a></td>
+                    </tr>
+                }
+            </tfoot>
+        </table>
+    </div>
+
+</div>

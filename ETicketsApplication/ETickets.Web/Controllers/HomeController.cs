@@ -1,4 +1,7 @@
-﻿using ETickets.Web.Models;
+﻿
+using ETickets.Domain;
+using ETickets.Domain.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -13,12 +16,12 @@ namespace ETickets.Web.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, UserManager<ETicketsApplicationUser> userManager)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult IndexAsync()
         {
             return View();
         }

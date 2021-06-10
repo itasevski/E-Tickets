@@ -1,0 +1,9 @@
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Domain\bin\Debug\netcoreapp3.1\ETickets.Domain.deps.json
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Domain\bin\Debug\netcoreapp3.1\ETickets.Domain.dll
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Domain\bin\Debug\netcoreapp3.1\ETickets.Domain.pdb
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Domain\obj\Debug\netcoreapp3.1\ETickets.Domain.AssemblyInfoInputs.cache
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Domain\obj\Debug\netcoreapp3.1\ETickets.Domain.AssemblyInfo.cs
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Domain\obj\Debug\netcoreapp3.1\ETickets.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Domain\obj\Debug\netcoreapp3.1\ETickets.Domain.dll
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Domain\obj\Debug\netcoreapp3.1\ETickets.Domain.pdb
+C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Domain\obj\Debug\netcoreapp3.1\ETickets.Domain.csproj.AssemblyReference.cache

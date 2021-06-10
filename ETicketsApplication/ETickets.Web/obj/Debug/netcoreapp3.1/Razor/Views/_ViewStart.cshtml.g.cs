@@ -21,13 +21,13 @@ using ETickets.Web;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\Ivo\Desktop\Иво Тасевски - ФИНКИ\VI семестар\Интегрирани системи\Homework\ETicketsApplication\ETickets.Web\Views\_ViewImports.cshtml"
-using ETickets.Web.Models;
+using ETickets.Domain;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9a14387094fbf0c6b12a9dc4fc8eacddad25a5e6", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1cb3c53adca234e4ed7dadeca796d2779b4e3b79", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
